@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -52,22 +51,19 @@ body {
 }
 
 #Gradient {
-    background-image: linear-gradient(135deg
-    ,#d16ba5, #c777b9, #ba83ca, #aa8fd8, 
-    #9a9ae1, #8aa7ec, #79b3f4, #69bff8, 
-    #52cffe, #41dfff, #46eefa, #5ffbf1);
+    background-image: linear-gradient(135deg, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
     background-size: 250%;
     animation: fanimado 10s infinite;
 }
 
-@keyframes fanimado{
-    0%{
+@keyframes fanimado {
+    0% {
         background-position: 0% 50%;
     }
-    50%{
+    50% {
         background-position: 100% 50%;
     }
-    100%{
+    100% {
         background-position: 0% 50%;
     }
 }
@@ -120,6 +116,7 @@ body {
 }
 
 .App {
+    width: 75%;
     min-height: 5vh;
     padding: 50px 50px;
     margin: 5px;
@@ -127,12 +124,12 @@ body {
 }
 
 .Header {
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     display: flex;
     flex: content;
-    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
 }
 
 .Logo {
@@ -144,8 +141,8 @@ body {
     border-radius: 20px;
 }
 
-.Title h1 {
-    text-align: left;
+.Title {
+    text-align: center;
     padding: 10px;
 }
 
@@ -154,12 +151,8 @@ body {
 }
 
 .About {
-    font-weight: 500;
-    font-size: 26px;
-    text-justify: auto;
-    justify-items: auto;
+    font-size: 24px;
     text-align: left;
-    text-size-adjust: auto;
     align-items: center;
 }
 
@@ -188,15 +181,12 @@ body {
         text-align: center;
         gap: 50px;
     }
-
     .Logo {
         width: 400px;
     }
-
     .img_top {
         width: 393px;
     }
-
     .About {
         text-size-adjust: auto;
         text-justify: auto;
@@ -210,17 +200,13 @@ body {
     .Logo {
         width: 300px;
     }
-
     .Header {
         display: flex;
         flex-direction: column;
-        gap: 25px;
     }
-
     .img_top {
         width: 293px;
     }
-
     .About {
         text-size-adjust: auto;
         text-justify: auto;
@@ -228,12 +214,10 @@ body {
         text-align: left;
         font-size: 12px;
     }
-
     #SocialNetwork {
         display: flex;
         flex-direction: row;
     }
-
     .barCountdown p {
         justify-content: center;
     }
@@ -243,25 +227,18 @@ body {
     .Header {
         display: flex;
         flex-direction: column;
-        gap: 25px;
     }
-
     .Logo {
         width: 150px;
     }
-    
     .img_top {
         width: 193px;
     }
-
     .About {
-        text-size-adjust: auto;
-        text-justify: auto;
         align-items: center;
         text-align: center;
         font-size: 10px;
     }
-
     #SocialNetwork {
         display: flex;
         flex-direction: row;
@@ -276,8 +253,5 @@ body {
     justify-content: space-between;
     font-size: calc(5px + 1vmin);
     color: white;
-    background-image: linear-gradient(to bottom, #232a32, #252c34, 
-    #262d36, #282f38, #2a313a, #2c333d, #2d363f, #2f3842, #313b46, 
-    #343e49, #36414d, #394451);
-  
+    background-image: linear-gradient(to bottom, #232a32, #252c34, #262d36, #282f38, #2a313a, #2c333d, #2d363f, #2f3842, #313b46, #343e49, #36414d, #394451);
 }
