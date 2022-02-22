@@ -172,7 +172,7 @@ body {
     width: 100%;
 }
 
-@media only screen and (max-width:1474px) {
+@media only screen and (max-width:1250px) {
     .Header {
         display: flex;
         flex: content;
@@ -185,7 +185,7 @@ body {
         width: 400px;
     }
     .img_top {
-        width: 393px;
+        width: 293px;
     }
     .About {
         text-size-adjust: auto;
@@ -193,6 +193,9 @@ body {
         align-items: center;
         text-align: left;
         font-size: 18px;
+    }
+    .barCountdown p {
+        justify-content: center;
     }
 }
 
@@ -217,9 +220,6 @@ body {
     #SocialNetwork {
         display: flex;
         flex-direction: row;
-    }
-    .barCountdown p {
-        justify-content: center;
     }
 }
 
