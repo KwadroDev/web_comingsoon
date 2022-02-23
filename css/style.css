@@ -172,10 +172,22 @@ body {
     width: 100%;
 }
 
-@media only screen and (max-width:1250px) {
+.Footer {
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline right;
+    justify-content: space-between;
+    font-size: calc(5px + 1vmin);
+    color: white;
+    background-image: linear-gradient(to bottom, #232a32, #252c34, #262d36, #282f38, #2a313a, #2c333d, #2d363f, #2f3842, #313b46, #343e49, #36414d, #394451);
+}
+
+@media only screen and (max-width:1472px) {
     .Header {
         display: flex;
         flex: content;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -194,36 +206,16 @@ body {
         text-align: left;
         font-size: 18px;
     }
+    #SocialNetwork {
+        display: flex;
+        flex-direction: row;
+    }
     .barCountdown p {
         justify-content: center;
     }
 }
 
-@media only screen and (max-width:990px) {
-    .Logo {
-        width: 300px;
-    }
-    .Header {
-        display: flex;
-        flex-direction: column;
-    }
-    .img_top {
-        width: 293px;
-    }
-    .About {
-        text-size-adjust: auto;
-        text-justify: auto;
-        align-items: center;
-        text-align: left;
-        font-size: 12px;
-    }
-    #SocialNetwork {
-        display: flex;
-        flex-direction: row;
-    }
-}
-
-@media only screen and (max-width:384px) and (max-width:768px) {
+@media only screen and (max-width:412px) and (max-width:768px) {
     .Header {
         display: flex;
         flex-direction: column;
@@ -243,15 +235,4 @@ body {
         display: flex;
         flex-direction: row;
     }
-}
-
-.Footer {
-    min-height: 20vh;
-    display: flex;
-    flex-direction: column;
-    align-items: baseline right;
-    justify-content: space-between;
-    font-size: calc(5px + 1vmin);
-    color: white;
-    background-image: linear-gradient(to bottom, #232a32, #252c34, #262d36, #282f38, #2a313a, #2c333d, #2d363f, #2f3842, #313b46, #343e49, #36414d, #394451);
 }
