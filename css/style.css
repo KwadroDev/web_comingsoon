@@ -183,7 +183,36 @@ body {
     background-image: linear-gradient(to bottom, #232a32, #252c34, #262d36, #282f38, #2a313a, #2c333d, #2d363f, #2f3842, #313b46, #343e49, #36414d, #394451);
 }
 
-@media screen and (max-width: 990px) and (max-width: 1472px) {
+@media screen and (max-width: 1664px) {
+    .Header {
+        display: flex;
+        flex: content;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 50px;
+    }
+    .Logo {
+        width: 400px;
+    }
+    .img_top {
+        width: 393px;
+    }
+    .About {
+        text-size-adjust: auto;
+        text-justify: auto;
+        align-items: center;
+        text-align: left;
+        font-size: 20px;
+    }
+    #SocialNetwork {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 1472px) and (max-width: 990px) {
     .Header {
         display: flex;
         flex: content;
