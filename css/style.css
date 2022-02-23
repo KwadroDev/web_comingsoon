@@ -115,6 +115,10 @@ body {
     background: #c777b9;
 }
 
+.Top {
+    background: #262d35;
+}
+
 .App {
     width: 75%;
     min-height: 5vh;
