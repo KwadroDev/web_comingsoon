@@ -183,7 +183,7 @@ body {
     background-image: linear-gradient(to bottom, #232a32, #252c34, #262d36, #282f38, #2a313a, #2c333d, #2d363f, #2f3842, #313b46, #343e49, #36414d, #394451);
 }
 
-@media only screen and (max-width:1472px) {
+@media screen and (max-width:1472px) {
     .Header {
         display: flex;
         flex: content;
@@ -212,5 +212,27 @@ body {
     }
     .barCountdown p {
         justify-content: center;
+    }
+}
+
+@media only screen and (max-width:412px) and (max-width:768px) {
+    .Header {
+        display: flex;
+        flex-direction: column;
+    }
+    .Logo {
+        width: 150px;
+    }
+    .img_top {
+        width: 193px;
+    }
+    .About {
+        align-items: center;
+        text-align: center;
+        font-size: 10px;
+    }
+    #SocialNetwork {
+        display: flex;
+        flex-direction: row;
     }
 }
