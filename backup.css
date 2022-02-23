@@ -1,4 +1,4 @@
-@media only screen and (max-width:1250px) {
+@media screen and (max-width: 990px) and (max-width: 1472px) {
     .Header {
         display: flex;
         flex: content;
@@ -9,7 +9,7 @@
         gap: 50px;
     }
     .Logo {
-        width: 400px;
+        width: 300px;
     }
     .img_top {
         width: 293px;
@@ -54,13 +54,13 @@
     }
 }
 
-@media only screen and (max-width:384px) and (max-width:768px) {
+@media only screen and (max-width:360px) and (max-width:768px) {
     .Header {
         display: flex;
         flex-direction: column;
     }
     .Logo {
-        width: 150px;
+        width: 200px;
     }
     .img_top {
         width: 193px;
@@ -73,5 +73,8 @@
     #SocialNetwork {
         display: flex;
         flex-direction: row;
+    }
+    .barCountdown p {
+        justify-content: center;
     }
 }
