@@ -183,7 +183,7 @@ body {
     background-image: linear-gradient(to bottom, #232a32, #252c34, #262d36, #282f38, #2a313a, #2c333d, #2d363f, #2f3842, #313b46, #343e49, #36414d, #394451);
 }
 
-@media screen and (max-width:768px) and (max-width:360px) {
+@media screen and (max-width:360px) and (max-width:768px) {
     .Header {
         display: flex;
         flex-direction: column;
