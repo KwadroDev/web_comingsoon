@@ -189,6 +189,25 @@ body {
         flex-direction: column;
     }
     .Logo {
+        width: 300px;
+    }
+    .img_top {
+        width: 293px;
+    }
+    .About {
+        font-size: 14px;
+    }
+    #SocialNetwork {
+        display: flex;
+        flex-direction: row;
+    }
+    .barCountdown p {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .Logo {
         width: 200px;
     }
     .img_top {
