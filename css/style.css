@@ -1,18 +1,88 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 * {
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
     box-sizing: border-box;
 }
 
 html {
-    font-family: 'Press Start 2P', cursive;
+    scroll-behavior: smooth;
+    height: 100%;
 }
 
 body {
     background: #232A32;
     color: white;
+    min-height: 100%;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+body h1 {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    padding: 50px;
+}
+
+.Top {
+    background: #262d35;
+    box-shadow: 0 5px 10px rgb(29, 29, 29);
+    width: 100%;
+    display: flex;
+    flex: content;
+    justify-content: center;
+}
+
+.Logo {
+    width: 250px;
+}
+
+.HeaderTop {
+    padding: 25px;
+    margin: 5px;
+}
+
+.img_top {
+    width: 193px;
+    border-radius: 20px;
+}
+
+.About {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+    text-align: center;
+    padding: 25px;
+    line-height: 20px;
+}
+
+.Header {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    max-width: 200vh;
+    margin: 0;
+}
+
+.header {
+    background: #1c2127;
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Collage img {
+    width: 100%;
+}
+
+.redes {
+    display: flex;
+    justify-content: initial;
+    align-items: flex-start;
+    flex-direction: column;
 }
 
 #SocialNetwork a {
@@ -44,32 +114,52 @@ body {
     opacity: 85%;
 }
 
+.container {
+    width: 80%;
+    max-width: 200vh;
+    margin: 0 auto;
+    padding: 15px;
+}
+
 #countdown {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 500;
 }
 
+.barCountdown p {
+    text-align: center;
+}
+
 #Gradient {
-    background-image: linear-gradient(135deg, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    background-image: linear-gradient(135deg
+    ,#d16ba5, #c777b9, #ba83ca, #aa8fd8, 
+    #9a9ae1, #8aa7ec, #79b3f4, #69bff8, 
+    #52cffe, #41dfff, #46eefa, #5ffbf1);
     background-size: 250%;
     animation: fanimado 10s infinite;
 }
 
-@keyframes fanimado {
-    0% {
+@keyframes fanimado{
+    0%{
         background-position: 0% 50%;
     }
-    50% {
+    50%{
         background-position: 100% 50%;
     }
-    100% {
+    100%{
         background-position: 0% 50%;
     }
 }
 
 .EnEs {
     text-align: center;
+    display: flex;
+    flex: content;
+    justify-content: center;
+    gap: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .en {
@@ -115,116 +205,149 @@ body {
     background: #c777b9;
 }
 
-.Top {
-    background: #262d35;
-}
-
-.App {
-    width: 75%;
-    min-height: 5vh;
-    padding: 50px 50px;
-    margin: 5px;
-    font-family: 'Press Start 2P', cursive;
-}
-
-.Header {
-    display: flex;
-    flex: content;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 50px;
-}
-
-.Logo {
-    width: 500px;
-}
-
-.img_top {
-    width: 393px;
-    border-radius: 20px;
-}
-
 .Title {
     text-align: center;
-    padding: 10px;
+    padding: 50px;
 }
 
 .Title h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.About {
-    font-size: 24px;
-    text-align: left;
-    align-items: center;
-}
-
 .Give {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
+    padding: 25px;
 }
 
-.Give a {
-    color: #1bdde2;
+.navbar ul li {
+    display: inline-block;
 }
 
-.Give a:hover {
-    color: #c777b9;
+.navbar {
+    text-align: center;
+    padding: 25px;
 }
 
-.Collage img {
-    width: 100%;
+.container-fluid li {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
 }
 
 .Footer {
+    text-align: center;
     min-height: 20vh;
-    display: flex;
-    flex-direction: column;
-    align-items: baseline right;
-    justify-content: space-between;
-    font-size: calc(5px + 1vmin);
+    margin: 50px 0 15px 0;
+    font-size: 18px;
     color: white;
-    background-image: linear-gradient(to bottom, #232a32, #252c34, #262d36, #282f38, #2a313a, #2c333d, #2d363f, #2f3842, #313b46, #343e49, #36414d, #394451);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: linear-gradient(to bottom, #232a32, #252c34, 
+    #262d36, #282f38, #2a313a, #2c333d, #2d363f, #2f3842, #313b46, 
+    #343e49, #36414d, #394451);
+  
 }
 
-@media screen and (max-width: 1600px) {
-    .Header {
-        display: flex;
-        flex-direction: column;
-    }
+.Footer h6 {
+    font-size: 16px;
+}
+
+.FooterContainer ul li {
+    display: inline-block;
+}
+
+.Footer ul {
+    display: flex;
+    flex: content;
+    gap: 25%;
+    align-items: center;
+    justify-content: center;
+}
+
+.FooterContainer {
+    list-style: none;
+}
+
+hr {
+    opacity: 25%;
+}
+
+a {
+    color: #41dfff;
+    transition: transform 0.4s;
+}
+
+.link:hover {
+    color: #c777b9;
+    transform: scale(1.1);
+    opacity: 85%;
+      
+}
+
+@media (min-width: 600px) {
     .Logo {
-        width: 300px;
+        width: 350px;
     }
+
     .img_top {
         width: 293px;
     }
+
+    .Sections {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .AboutDiv {
+        text-size-adjust: auto;
+    }
+
     .About {
-        font-size: 14px;
-    }
-    #SocialNetwork {
-        display: flex;
-        flex-direction: row;
-    }
-    .barCountdown p {
-        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 80;
+        width: 450px;
     }
 }
 
-@media screen and (max-width: 990px) {
-    .Logo {
-        width: 200px;
-    }
-    .img_top {
-        width: 193px;
-    }
-    .About {
-        font-size: 10px;
-    }
-    #SocialNetwork {
-        display: flex;
+@media (min-width: 970px) {
+    .redes {
+        justify-content: space-between;
+        align-items: center;
         flex-direction: row;
     }
-    .barCountdown p {
-        justify-content: center;
+
+    .HeaderTop {
+        display: flex;
+        align-items: center;
+        width: 50%;
+        padding: 25px 25px;
+        margin: 5px;
+    }
+
+    .Logo {
+        width: 500px;
+    }
+
+    .img_top {
+        width: 393px;
+    }
+
+    .Sections {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .AboutDiv {
+        text-size-adjust: auto;
+    }
+
+    .About {
+        align-items: center;
+        text-align: left;
+        font-size: 14px;
+        font-weight: 100;
+        width: 520px;
     }
 }
